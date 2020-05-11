@@ -76,6 +76,6 @@ function setupOpenwith() {
             console.log('  utis: ', item.utis);   // some optional additional info
         }
 
-        document.getElementById('deviceready').innerHTML = `<pre>${JSON.stringify(item, null, 2)}</pre>`;
+        document.getElementById('deviceready').innerHTML = `<pre>${JSON.stringify({items: intent.items}, null, 2)}</pre>`;
     }
 }
